@@ -1,12 +1,18 @@
 {
   "name": "porter-duty-sheet",
   "version": "1.0.0",
+  "description": "Night Porter Duty Sheet - CTCRM Officers Mess",
   "main": "server.js",
-  "scripts": { "start": "node server.js" },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+    "build": "mkdir -p public && cp ./index.html public/"   
+  },
   "dependencies": {
     "express": "^4.18.2",
     "express-session": "^1.17.3",
     "bcryptjs": "^2.4.3",
-    "nedb": "^1.8.0"
+    "better-sqlite3": "^9.4.3",
+    "connect-sqlite3": "^0.9.13"
   }
 }
