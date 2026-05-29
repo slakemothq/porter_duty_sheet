@@ -10,6 +10,8 @@ services:
         generateValue: true
       - key: NODE_ENV
         value: production
+      - key: RENDER
+        value: true
     disk:
       name: porter-db
       mountPath: /opt/render/project/src/db
