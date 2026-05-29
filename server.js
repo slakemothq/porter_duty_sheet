@@ -1,7 +1,7 @@
 const express  = require('express');
 const session  = require('express-session');
 const bcrypt   = require('bcryptjs');
-const Datastore = require('nedb');
+const Datastore = require('@seald-io/nedb');
 const path     = require('path');
 const fs       = require('fs');
 
